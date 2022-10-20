@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nightlife Gallery</title>
+
+        <style>
+            body {
+                background-color: beige;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                font-size: 60px;
+                font-style: oblique;
+                color: rgb(28, 113, 28);
+            }
+
+            h2 {
+                text-align: right;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 30px;
+                font-style: italic;
+                color: rgb(188, 48, 10);
+                padding-right: 20px;
+                border-bottom: 8px double rgb(188, 48, 10) ;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: 'Permanent Marker', sans-serif;
+                font-size: 35px;
+                color: rgb(28, 113, 28);
+                padding-top: 5%;   
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                
+                margin: auto;
+                width: fit-content;
+                height: fit-content;
+                border: 5px solid rgb(188, 48, 10);
+
+            }
+
+            .nav {
+                text-align: center;
+                font-family: 'Permanent Marker', sans-serif; 
+                font-size: 25px;
+                color: rgb(28, 113, 28);
+            }
+
+            ul {
+                list-style: none;
+                text-decoration: double;
+            }
+
+            li {
+                display: inline;
+                margin-top: 5%;
+                margin-right: 7%;
+                font-family: 'Permanent Marker', sans-serif; 
+                font-size: 28px; 
+            }
+
+            .gallery_container {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                
+            }
+
+            .gallery_list {
+                height: 40vh;
+                margin-top: 5%;
+                
+            }
+
+            img {
+                max-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                vertical-align: bottom;
+            }
+
+            p {
+                text-align: center;
+                font-family: 'Barlow Condensed', sans-serif;
+                font-size: 14px;
+                padding-bottom: 5%;
+            }
+
+
+            footer {
+                margin-top: 30%;
+            }
+
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="script/all.min.js"></script>
+
+        <div class="title_heading">
+            <h1>Silva Family Safari</h1>
+        </div>
+
+        <div class="promo_heading">
+            <h2>Fun for all age and sizes!</h2>
+        </div>
+
+        <div class="gallery_heading">
+            <h3>Resort Nightlife</h3>
+        </div>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Homepage</a></li>
+                    <li><a href="gallery_animals.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+                    <li><a href="gallery_nature.html"><i class="fa-solid fa-leaf"></i>Nature</a></li>
+                    <li><a href="gallery_food.html"><i class="fa-solid fa-burger"></i> Food</a></li>
+                    <li><a href="gallery_nightlife.html"><i class="fa-solid fa-champagne-glasses"></i> Nightlife</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="gallery_images">
+
+            <ul class="gallery_container">
+
+                <!--broken image link 2-->
+
+                <li class="gallery_list">
+
+                    <a href="images/temple-night_original2.jpg">
+                        <img src="images/temple-night_thumbnail.jpg" alt="temple at night" /></a> 
+                            <p><a href="https://www.pexels.com/photo/people-in-temple-at-night-13838118/">Photo by Maksim Romashkin</a></p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/parade-night_larger.jpg" style="height: 60%; width: 60%;">
+                        <img src="images/parade-night_thumbnail.jpg" alt="parade at night" /></a>
+                            <p><a href="https://www.pexels.com/photo/people-on-parade-13838159/">Photo by Maksim Romashkin</a></p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/bottle-sparklers_larger.jpg" style="height:60%; width: 60%;">
+                        <img src="images/bottle-sparklers_thumbnail.jpg" alt="bottles with sparklers attached at a outdoor party" /></a>
+                            <p><a href="https://www.pexels.com/photo/dark-image-of-people-holding-yellow-fireworks-9304093/">Photo by Isabella Mendes</a>
+                            </p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/man-torch_larger.jpg" style="height: 60%; width: 60%;">
+                        <img src="images/man-torch_thumbnail.jpg" alt="man holding a torch at night" /></a>
+                            <p><a href="https://www.pexels.com/photo/blond-man-with-bare-torso-and-torches-at-night-9323615/">Photo by Tsepin Цепa</a>
+                            </p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/fire-pit_larger.jpg" style="height:60%; width: 60%;">
+                        <img src="images/fire-pit_thumbnail.jpg" alt="fire pit with friends" /></a>
+                            <p><a href="https://www.pexels.com/photo/woman-warming-her-hands-in-front-of-the-fire-pit-7148681/">Photo by Kindel Media</a></p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/people-cliff_larger.jpg" style="height: 60%; width: 60%;">
+                        <img src="images/people-cliff_thumbnail.jpg" alt="group of friends looking out off a cliff" /></a>
+                            <p><a href="https://www.pexels.com/photo/people-standing-on-a-cliff-9943049/">Photo by cottonbro</a></p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/camping-forest_larger.jpg" style="height:60%; width: 60%;">
+                        <img src="images/camping-forest_thumbnail.jpg" alt="camping in the forest surrounded by palm-trees_larger" /></a>
+                            <p><a href="https://www.pexels.com/photo/an-orange-tent-in-the-woods-13923325/">Photo by Paige Thompson</a></p>
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/concert_larger.jpg" style="height: 60%; width: 60%;">
+                        <img src="images/concert_thumbnail.jpg" alt="concert full of people with lights shining on smoky hall" /></a>
+                            <p><a href="https://www.pexels.com/photo/people-inside-dark-room-with-spotlights-426976/">Photo by Jacob Morch</a></p>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <footer>Silva Family Safari™ website gallery created by Jonathan Silva </footer>
+
+    </body>
+</html>

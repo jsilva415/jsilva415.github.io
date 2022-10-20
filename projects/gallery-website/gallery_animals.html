@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Animal Gallery</title>
+
+        <style>
+            body {
+                background-color: beige;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                font-size: 60px;
+                font-style: oblique;
+                color: rgb(28, 113, 28);
+            }
+
+            h2 {
+                text-align: right;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 30px;
+                font-style: italic;
+                color: rgb(188, 48, 10);
+                padding-right: 20px;
+                border-bottom: 8px double rgb(188, 48, 10) ;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: 'Permanent Marker', sans-serif;
+                font-size: 35px;
+                color: rgb(28, 113, 28);
+                padding-top: 5%;  
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                width: 800px;
+                height: fit-content;
+                border: 5px solid rgb(188, 48, 10);
+
+            }
+
+            .nav {
+                text-align: center;
+                font-family: 'Permanent Marker', sans-serif; 
+                font-size: 35px;
+                color: rgb(28, 113, 28);
+            }
+
+            ul {
+                list-style: none;
+                text-decoration: double;
+            }
+
+            li {
+                display: inline;
+                margin-top: 5%;
+                margin-right: 5%;
+                font-family: 'Permanent Marker', sans-serif; 
+                font-size: 30px; 
+            }
+
+            .gallery_container {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                
+            }
+
+            .gallery_list {
+                height: 40vh;
+                margin-top: 5%;
+                
+            }
+
+            img {
+                max-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                vertical-align: bottom;
+            }
+
+            p {
+                text-align: center;
+                font-family: 'Barlow Condensed', sans-serif;
+                font-size: 14px;
+            }
+
+
+            footer {
+                margin-top: 30%;
+            }
+
+
+           
+        </style>
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <script src="script/all.min.js"></script>
+
+        <div class="title_heading">
+            <h1>Silva Family Safari</h1>
+        </div>
+
+        <div class="promo_heading">
+            <h2>Meet many of the fantastic beasts that reside here!</h2>
+        </div>
+
+        <div class="gallery_heading">
+            <h3>Exotic Animals!</h3>
+        </div>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="nav_list"><a href="index.html"><i class="fa-solid fa-house"></i> Homepage</a></li>
+
+                    <li><a href="gallery_animals.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+
+                    <li><a href="gallery_nature.html"><i class="fa-solid fa-leaf"></i> Nature</a></li>
+
+                    <li><a href="gallery_food.html"><i class="fa-solid fa-burger"></i>Food</a></li>
+
+                    <li><a href="gallery_nightlife.html"><i class="fa-solid fa-champagne-glasses"></i> Nightlife</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Once you start placeing images in your gallery, for the larger images try and scale them so that they fit most displays-->
+
+        <div class="gallery_images">
+
+            <ul class="gallery_container">
+
+            <li class="gallery_list">
+
+                <a href="images/two_lions_larger_copy.jpg" style="height: 60%; width: 60%">
+
+                    <img src="images/two_lions_thumbnail.jpg" alt="male and female lions cuddling together" />
+                </a> 
+                    <p>
+                        <a href="https://www.pexels.com/photo/two-brown-lions-lying-on-grass-730539">Photo by Gary Whyte</a>
+                    </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/antelopes_larger.jpg" style="height: 60%; width: 60%;">
+
+                <img src="images/antelopes_thumbnail.jpg" alt="group of antelope" />
+
+            </a>
+
+                    <p>
+                        <a href="https://www.pexels.com/photo/brown-deers-631228/">
+                        Photo by Frans van Heerden</a>
+                    </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/hippo_larger.jpg" style="height:60%; width: 60%;">
+                <img src="images/hippo_thumbnail.jpg" alt="hippo staring out of body of water" />
+            </a>
+
+                <p>
+                    <a href="https://www.pexels.com/photo/a-hippopotamus-immersed-in-body-of-water-6857757/">
+                        Photo by Claire Ikeda</a>
+                </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/lemures_larger.jpg" style="height: 60%; width: 60%;">
+                <img src="images/lemures_thumbnail.jpg" alt="lemure sitting in a tree" />
+            </a>
+
+                <p>
+                    <a href="https://www.pexels.com/photo/photo-of-lemur-3822505/">
+                        Photo by Magda Ehlers</a>
+                </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/tiger_larger.jpg" style="height:60%; width: 60%;">
+                <img src="images/tiger_thumbnail.jpg" alt="tiger resting on stone" />
+            </a>
+                <p>
+                    <a href="https://www.pexels.com/photo/powerful-tiger-resting-on-stone-5694257/">
+                        Photo by Mehmet Turgut  Kirkgoz</a>
+                </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/two_elephants_larger.jpg" style="height: 60%; width: 60%;">
+                <img src="images/two_elephants_thumbnail.jpg" alt="two elephants crossing a road" />
+            </a>
+
+                <p>
+                    
+                    <a href="https://www.pexels.com/photo/elephant-walking-321526/">
+                        Photo by Oleksandr Pidvalnyi
+                    </a>
+                
+                </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/monkey_larger.jpg" style="height:60%; width: 60%;">
+                <img src="images/monkey_thumbnail.jpg" alt="monkey sitting on a cliff" />
+            </a>
+
+                <p>
+
+                    <a href="https://www.pexels.com/photo/shallow-focus-photography-of-monkey-3342627/">
+                        Photo by Leonid Danilov
+                    </a>
+
+                </p>
+
+            </li>
+
+            <li class="gallery_list">
+
+            <a href="images/guacamaya_larger.jpg" style="height: 60%; width: 60%;">
+                <img src="images/guacamaya_thumbnail.jpg" alt="couple of guacamayas perched on a tree" />
+            </a>
+
+                <p>
+                    <a href="https://www.pexels.com/photo/colorful-parrots-perched-on-driftwood-5703286/">
+                        Photo by Daniela Velarde</a>
+                </p>
+
+            </li>
+
+            </ul>
+
+        </div>
+
+    
+        <footer>
+            Silva Family Safari™ website gallery created by Jonathan Silva 
+        </footer>
+    
+    </body>
+
+    
+
+</html>

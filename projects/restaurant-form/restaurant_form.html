@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Johnny Blues online order</title>
+    
+    <style>
+
+        body {
+            background-color: rgb(77,255,255);
+            color: rgb(26,0,153);
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 10%;  
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 70px;
+            text-align: center;
+            border-bottom: 20px double;
+        }
+
+        h2 {
+            font-family: 'Lobster', cursive;
+            text-align: right;
+            margin-right: 10%;
+        }
+
+        #container {
+            display: flex;
+            flex-basis: 500px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            height: 1000px;
+            background-color: darkcyan;
+            gap: 5px;
+            border: 5px solid darkblue;
+            border-radius: 3%;   
+        }
+            
+        .contact {
+            flex-basis: 40%;
+            flex-grow: 1;
+            align-self: center;
+            background-color: darkcyan;;
+            
+            margin-left: 5%;
+            height: auto; 
+               
+        }
+
+        .delivery {
+            flex-basis: 30%;
+            flex-grow: 1;
+            align-self: flex-end;
+            background-color: darkcyan;
+            
+            height: auto;
+            
+        }
+
+        .order {
+            flex-basis: 80%;
+            flex-grow: 1;
+            align-self: flex-start;
+            margin-left: 5%;
+            background-color: darkcyan;
+            width: 40%;
+            height: 200px;
+        }
+
+        .drink {
+            flex-basis: 40%;
+            flex-grow: 1;
+            align-self: flex-end;
+            background-color: darkcyan;
+            margin-left: 10%;
+            width: 40%;
+            height: auto;
+            
+        }
+            
+        .condiment {
+            flex-basis: 40%;
+            margin-top: 0;
+            background-color: darkcyan;
+            margin-left: 20%;
+            flex-grow: 1;
+            
+        }
+
+        .allergies {
+            flex-basis: auto;
+            height: 200px;
+            flex-grow: 1;
+            background-color: darkcyan; 
+            
+        }
+
+        .comment {
+            flex-basis: 100%;
+            flex-grow: 1;
+            height: 200px;
+            margin-left: 10%;
+            background-color: darkcyan;
+            
+        }
+
+        .submit {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 40%;
+            
+            
+            
+        }
+
+    </style>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital@1&family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+    <h1 class="companyname">Johnny Blue's Cafe</h1>
+
+        <h2 class="onlineorderquote">Tired of waiting in line? You can now order online!</h2>
+
+        <br />
+
+        <div id="container">
+
+            <div class="contact" id="box-1">
+
+                <form>
+    
+                    <h3>Contact Info: </h3>
+        
+                        <label for="fname">First Name: </label>
+
+                        <br />
+                            <input id="fname" type="text" class="fname" placeholder="John" style="background-color: beige" required />
+
+                        <br />
+    
+                        <label for="lname">Last Name: </label>
+
+                        <br />
+                            <input id="lname" type="text" class="lname" placeholder="Smith" style="background-color: beige" required />
+
+                        <br />
+    
+                        <label for="phone">Phone Number: </label>
+
+                        <br />
+                            <input id="phone" type="tel" class="phone" placeholder=" ###-###-####" style="background-color: beige" required />
+
+                        <br />
+    
+                        <label for="email">Email: </label>
+
+                        <br />
+                            <input id="email" type="email" class="email" placeholder="jsmith@gmail.com" style="background-color: beige" required />
+    
+                </form>
+        </div>
+
+        <div class="delivery" id="box-2"> 
+            
+                <form>
+
+                    <h3 style="padding-bottom: 5%">Delivery Address: </h3>
+
+                    <label for="staddress">Street Address: </label>
+
+                    <br />
+                        <input id="staddress" type="text" class="staddress" placeholder="123 Apple Street" style="background-color: beige" required />
+
+                    <br />
+
+                    <label for="city">City: </label>
+
+                    <br />
+                        <input id="city" type="text" class="city" placeholder="San Francisco" style="background-color: beige" required />
+
+                    <br />
+            
+                    <label for="state">Select your state: </label>
+
+                    <br />
+                        <select name="state" id="state">
+
+                        <option value="Alabama">Alabama</option>
+
+                        <option value="Alaska">Alaska</option>
+                
+                        <option value="Arizona">Arizona</option>
+
+                        <option value="Arkansas">Arkansas</option>
+
+                        <option value="California">California</option>
+
+                        <option value="Colorado">Colorado</option>
+
+                        <option value="Connecticut">Delaware</option>
+
+                        <option value="Delaware">Delaware</option>
+
+                        <option value="Florida">Florida</option>
+
+                        <option value="Hawaii">Hawaii</option>
+
+                        <option value="Idaho">Idaho</option>
+
+                        <option value="Iowa">Iowa</option>
+
+                        <option value="Kansas">Kansas</option>
+
+                        <option value="Kentucky">Kentucky</option>
+
+                        <option value="Louisiana">Louisiana</option>
+
+                        <option value="Maine">Maine</option>
+
+                        <option value="Maryland">Maryland</option>
+
+                        <option value="Massachusetts">Massachusetts</option>
+
+                        <option value="Michigan">Michigan</option>
+
+                        <option value="Minnesota">Minnesota</option>
+
+                        <option value="Mississippi">Mississippi</option>
+
+                        <option value="Missouri">Missouri</option>
+
+                        <option value="Montana">Montana</option>
+
+                        <option value="Nebraska">Nebraska</option>
+
+                        <option value="Nevada">Nevada</option>
+
+                        <option value="New Hampshire">New Hampshire</option>
+
+                        <option value="New Jersey">New Jersey</option>
+
+                        <option value="New Mexico">New Mexico</option>
+
+                        <option value="New York">New York</option>
+
+                        <option value="North Carolina">North Carolina</option>
+
+                        <option value="North">Dakota</option>
+
+                        <option value="Ohio">Ohio</option>
+
+                        <option value="Oklahoma">Oklahoma</option>
+
+                        <option value="Oregon">Oregon</option>
+
+                        <option value="Pennsylvania">Pennsylvania</option>
+
+                        <option value="Rhode Island">Rhode Island</option>
+
+                        <option value="South Carolina">South Carolina</option>
+
+                        <option value="South Dakota">South Dakota</option>
+
+                        <option value="Tennessee">Tennessee</option>
+
+                        <option value="Texas">Texas</option>
+
+                        <option value="Utah">Utah</option>
+
+                        <option value="Vermont">Vermont</option>
+
+                        <option value="Virginia">Virginia</option>
+
+                        <option value="Washington">Washington</option>
+
+                        <option value="West Virginia"> West Virginia</option>
+
+                        <option value="Wisconsin">Wisconsin</option>
+
+                        <option value="Wyoming">Wyoming</option>
+
+                    </select>
+
+                    <br />
+
+                    <label for="zipcode">Zipcode: </label>
+
+                    <br />
+                        <input id="zipcode" type="text" class="zipcode" placeholder="12345" style="background-color: beige" required />
+        
+                </form>
+
+        </div>
+
+        <br />
+
+        <div class="order" id="box-3">
+
+                <form>
+
+                    <h3>What would you like to order today?</h3>
+
+                    <select class="choice1"  id="choice1" style="background-color: beige" required multiple>
+
+                        <option selected>none</option>
+
+                        <option value="hamburger">Hamburger</option>
+
+                        <option value="hotdog">Hotdog</option>
+
+                        <option value="chburger">Cheese Burger</option>
+
+                        <option value="chchdog">Chili Cheese Dog</option>
+
+                        <option value="bcchburger">Bacon Cheeseburger</option>
+
+                        <option value="csalad">Caesar Salad</option>
+
+                        <option value="clsandwich">Club Sandwich</option>
+
+                        <option value="chtenders">Chicken Tenders (10 piece)</option>
+
+                        <option value="fries">French fries</option>
+
+                        <option value="chchfries">Chili Cheese Fries</option>
+
+                    </select>
+
+                    <select class="choice2" id="choice2" style="background-color: beige" multiple>
+
+                        <option selected>none</option>
+
+                        <option value="hamburger">Hamburger</option>
+
+                        <option value="hotdog">Hotdog</option>
+
+                        <option value="chburger">Cheese Burger</option>
+
+                        <option value="chchdog">Chili Cheese Dog</option>
+
+                        <option value="bcchburger">Bacon Cheese Burger</option>
+
+                        <option value="csalad">Caesar Salad</option>
+
+                        <option value="clsandwich">Club Sandwich</option>
+
+                        <option value="chtenders">Chicken Tenders (10 piece)</option>
+
+                        <option value="fries">French Fries</option>
+
+                        <option value="chchfries">Chili Cheese Fries</option>
+
+                    </select>
+
+                    <select class="choice3" style="background-color: beige" multiple>
+                        <option selected>none</option>
+
+                        <option value="hamburger" id="choice3">Hamburger</option>
+
+                        <option value="hotdog">Hotdog</option>
+
+                        <option value="chburger">Cheese Burger</option>
+
+                        <option value="chchdog">Chili Cheese Dog</option>
+
+                        <option value="bcchburger">Bacon Cheese Burger</option>
+
+                        <option value="csalad">Caesar Salad</option>
+
+                        <option value="clsandwich">Club Sandwich</option>
+
+                        <option value="chtenders">Chicken Tenders (10 piece)</option>
+
+                        <option value="fries">French Fries</option>
+
+                        <option value="chchfries">Chili Cheese Fries</option>
+
+                    </select>
+
+                </form>
+
+        </div>
+
+        <div class="drink" id="drink">
+
+                <form>
+
+                    <h3>Choose your Drink: </h3>
+
+                        <input type="radio" id="drink1" name="drink" />
+                            <label for="drink1">Coca-Cola</label>
+
+                        <input type="radio" id="drink2" name="drink" />
+                            <label for="drink2">Sprite</label>
+
+                        <input type="radio" id="drink3" name="drink" />
+                            <label for="drink3">Lemonade</label>
+
+                        <input type="radio" id="drink4" name="drink" />
+                            <label for="drink4">Ice-Tea</label>
+                        
+                        <input type="radio" id="drink5" name="drink" />
+                            <label for="drink5">None</label>
+                </form>
+
+        </div>
+
+        <div class="condiment" id="box-4">
+
+                <form>
+        
+                    <h3>Condiments...?</h3>
+
+                        <input type="checkbox" id="condiment1" name="ketchup" />
+                            <label for="condiment1">Ketchup</label>
+
+                        <br />
+        
+                        <input type="checkbox" id="condiment2" name="mustard" />
+                            <label for="condiment2">Mustard</label>
+
+                        <br />
+
+                        <input type="checkbox" id="condiment3" name="ranch" />
+                            <label for="condiment3">Ranch</label>
+
+                        <br />
+
+                        <input type="checkbox" id="condiment4" name="bbqsauce" />
+                            <label for="condiment4">BBQ Sauce</label>
+
+                        <br />
+
+                     <input type="checkbox" id="condiment5" name="mayo" style="background-color: beige" />
+                            <label for="condiment5">Mayonaise</label>
+
+                </form>
+
+        </div>
+
+        <div class="allergies" id="box-5">
+
+                <form>
+
+                    <h3>Allergies...?</h3>
+
+        
+
+                        <input type="checkbox" id="milk" name="milk" />
+                            <label for="milk">Milk</label>
+
+                        <br />
+
+                        <input type="checkbox" id="tnuts" name="tnuts" />
+                            <label for="tnuts">Tree Nuts</label>
+
+                        <br />
+
+                        <input type="checkbox" id="eggs" name="eggs" />
+                            <label for="eggs">Eggs</label>
+
+                        <br />
+
+                        <input type="checkbox" id="pnuts" name="pnuts" />
+                            <label for="pnuts">Peanuts</label>
+
+                        <br />
+
+                        <input type="checkbox" id="fish" name="fish" />
+                            <label for="fish">Fish</label>
+
+                        <br />
+
+                        <input type="checkbox" id="wheat" name="#Wheat" />
+                            <label for="wheat">Wheat</label>
+
+                        <br />
+
+                        <input type="checkbox" id="shellfish" name="shellfish" />
+                            <label for="shellfish">Shellfish</label>
+
+                        <br />
+
+                        <input type="checkbox" id="soybean" name="soybean" />
+                            <label for="soybean">Soy Beans</label>
+
+                        <br />
+
+                        <input type="checkbox" id="other" name="other" />
+                            <label for="other">Other</label>
+            
+                        <br />
+
+                        <label for="other">Please Specify: </label>
+                            <br />
+                            <input id="othertextfield" type="text" class="other" placeholder="xxxxxx" style="background-color: beige" />
+
+                </form>
+
+        </div>
+
+        <div class="comment" id="box-6">
+        
+                <form>
+
+                <br />
+
+                    <h3>Comments...?</h3>
+                        <textarea name="textarea" class="textarea" rows="3" cols="12" placeholder="(No onions, pickels etc)" style="background-color: beige" ></textarea>
+                </form>
+
+        </div>
+
+        <div class="submit" id="submit">
+            <button style="text-align: center; font-size: 20px; background-color: lightblue;">Place order</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

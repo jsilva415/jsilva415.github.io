@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nature Gallery</title>
+
+        <style>
+            body {
+                background-color: beige;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                font-size: 60px;
+                font-style: oblique;
+                color: rgb(28, 113, 28);
+            }
+
+            h2 {
+                text-align: right;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 30px;
+                font-style: italic;
+                color: rgb(188, 48, 10);
+                padding-right: 20px;
+                border-bottom: 8px double rgb(188, 48, 10) ;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: 'Permanent Marker', sans-serif;
+                font-size: 35px;
+                color: rgb(28, 113, 28);
+                padding-top: 5%;   
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                width: fit-content;
+                height: fit-content;
+                border: 5px solid rgb(188, 48, 10);
+
+            }
+
+            .nav {
+                text-align: center;
+                font-family: 'Permanent Marker', sans-serif; 
+                font-size: 25px;
+                color: rgb(28, 113, 28);
+            }
+
+            ul {
+                list-style: none;
+                text-decoration: double;
+            }
+
+            li {
+                display: inline;
+                margin-top: 5%;
+                margin-right: 7%;
+                font-family: 'Permanent Marker', sans-serif; 
+                font-size: 30px; 
+            }
+
+            .gallery_container {
+                display: flex;
+                
+                flex-wrap: wrap;
+                list-style-type: none;
+                
+            }
+
+            .gallery_list {
+                height: 40vh;
+                margin-top: 5%;
+                align-items: center;
+                
+            }
+
+            img {
+                max-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                vertical-align: bottom;
+            }
+
+            p {
+                text-align: center;
+                font-family: 'Barlow Condensed', sans-serif;
+                font-size: 14px;
+                padding-bottom: 3%;
+            }
+
+
+            footer {
+                margin-top: 30%;
+            }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="script/all.min.js"></script>
+
+        <div class="title_heading">
+            <h1>Silva Family Safari</h1>
+        </div>
+
+        <div class="promo_heading">
+            <h2>Be sure to check out the wonders of nature!</h2>
+        </div>
+
+        <div class="gallery_heading">
+            <h3>Glorious Nature!</h3>
+        </div>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Homepage</a></li>
+                    <li><a href="gallery_animals.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+                    <li><a href="gallery_nature.html"><i class="fa-solid fa-leaf"></i> Nature</a></li>
+                    <li><a href="gallery_food.html"><i class="fa-solid fa-burger"></i>Food</a></li>
+                    <li><a href="gallery_nightlife.html"><i class="fa-solid fa-champagne-glasses"></i> Nightlife</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="gallery_images">
+
+            <ul class="gallery_container">
+
+                <li class="gallery_list">
+
+                    <a href="images/lotus_larger.jpg" style="height: 60%; width: 60%;">
+
+                        <img src="images/lotus_thumbnail.jpg" alt="pink lotus flower laying on river" />
+
+                    </a> 
+                        <p>
+
+                            <a href="https://www.pexels.com/photo/aquatic-bloom-blooming-blossom-158465/">Photo by Pixabay</a>
+
+                        </p>
+
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/white-hibiscus_larger.jpg" style="height: 60%; width: 60%;">
+
+                        <img src="images/white-hibiscus_thumbnail.jpg" alt="white hibiscus photograph" />
+
+                    </a>
+
+                        <p>
+                            <a href="https://www.pexels.com/photo/a-beautiful-white-hibiscus-on-garden-3782333/">
+                                Photo by Huynh Phong
+                            </a>
+
+                        </p>
+
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/red-ixora-flower_larger.jpg" style="height:60%; width: 60%;">
+
+                        <img src="images/red-ixora-flower_thumbniail.jpg" alt="red ixora flower" />
+
+                    </a>
+
+                        <p>
+
+                            <a href="https://www.pexels.com/photo/selective-focus-photography-of-red-ixora-flower-buds-1033749/">
+
+                                Photo by Rajeev Mog Chowdhary
+
+                            </a>
+
+                        </p>
+
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/palm-trees_larger.jpg" style="height: 60%; width: 60%;">
+
+                        <img src="images/palm-trees_thumbnail.jpg" alt="group of palm trees" />
+
+                    </a>
+
+                        <p>
+                        
+                            <a href="https://www.pexels.com/photo/view-of-palm-trees-5865392/">
+
+                                Photo by Rachel Claire 
+                            
+                            </a>
+                    
+                        </p>
+
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/red-tropical-flower_larger.jpg" style="height:60%; width: 60%;">
+                    
+                        <img src="images/red-tropical-flower_thumbnail.jpg" alt="red tropical flower zoomed in" />
+
+                    </a>
+
+                        <p>
+
+                            <a href="https://www.pexels.com/photo/red-tropical-flowers-blooming-in-summer-6260506/">
+
+                                Photo by Amity Ivan Orca
+
+                            </a>
+
+                        </p>
+
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/pink-petal-flower_larger.jpg">
+
+                        <img src="images/pink-petal-flower_thumbnail.jpg" alt="pink petaled flowers with a sunset in background" />
+
+                    </a>
+
+                        <p>
+                    
+                            <a href="https://www.pexels.com/photo/close-up-photo-of-pink-petaled-flowers-600114/">
+
+                                Photo by Victor Freitas
+
+                            </a>
+                
+                        </p>
+
+                </li>
+
+                <!--broken image link-->
+
+                <li class="gallery_list">
+
+                    <a href="imgaes/orange-flower_larger.jpg" style="height:60%; width: 60%;">
+
+                        <img src="images/orange-flower_thumbnail.jpg" alt="orange flowers with a blue sky in the background" />
+
+                    </a>
+
+                        <p>
+
+                            <a href="https://www.pexels.com/photo/orange-flowers-in-close-up-shot-13219371/">
+
+                                Photo by Daisy Kun
+
+                            </a>
+
+                        </p>
+
+                </li>
+
+                <li class="gallery_list">
+
+                    <a href="images/red-tulips_larger.jpg" style="height: 60%; width: 60%;">
+
+                        <img src="images/red-tulips_thumbnail.jpg" alt="red tulips with a blue sky in background" />
+
+                    </a>
+
+                        <p>
+
+                            <a href="https://www.pexels.com/photo/red-tulip-under-clear-blue-sky-449027/">
+
+                                Photo by Daniel Absi
+
+                            </a>
+
+                        </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        
+
+
+
+        <footer>Silva Family Safari™ website gallery created by Jonathan Silva </footer>
+    </body>
+</html>
